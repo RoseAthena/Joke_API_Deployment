@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask for Fun</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="m-2">
+            <h1>Pick the language, the category and the number of jokes to hear</h1>
+        </div>
+    </header>
+    <main>
+        <div class="m-2">
+            <div>
+                <form>
+                    <div>
+                        <div class="columns is-multiline">
+                            <div id="fieldLanguage" class="column">
+                                <label>Language</label>
+                                <div class="select">
+                                    <select name="language" id="selLang">
+                                        <option value="any">Any</option>
+                                        <option value="cs">Czech</option>
+                                        <option value="de">German</option>
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="eu">Basque</option>
+                                        <option value="fr">French</option>
+                                        <option value="gl">Galician</option>
+                                        <option value="hu">Hungarian</option>
+                                        <option value="it">Italian</option>
+                                        <option value="lt">Lithuanian</option>
+                                        <option value="pl">Polish</option>
+                                        <option value="sv">Swedish</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="fieldCategory" class="column">
+                                <label>Category</label>
+                                <div class="select">
+                                    <select name="category" id="selCat">
+                                        <option value="any">Any</option>
+                                        <option value="neutral">Neutral</option>
+                                        <option value="chuck">Chuck</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="fieldNumber" class="column">
+                                <label>Number</label>
+                                <div class="select">
+                                    <select name="number" id="selNum">
+                                        <option value="all">All</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="fieldId" class="column">
+                              <label>
+                                <input type="number" class="input" id="jokeId">
+                              </label>
+                            </div>
+                            <div class="column is-full">
+                                <button type="button" id="btnAmuse" class="button is-info is-fullwidth">Entertain me</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="m-2">
+            <div id="jokes">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
